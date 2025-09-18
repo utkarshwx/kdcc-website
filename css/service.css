@@ -1,0 +1,40 @@
+.body-text {
+    width: 100%;
+}
+
+.service-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service-text {
+    width: 50%;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Optional: Make it responsive for mobile */
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+    }
+    .service-text, .service-image {
+        width: 100%;
+    }
+}
